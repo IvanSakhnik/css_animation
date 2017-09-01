@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+}
+
+.wrapper {
+    width: 630px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.path{
+    animation: pathDeer 5s linear, fillDeer 5s linear 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pathDeer {
+    from {
+        stroke-dasharray: 0px 2000px;
+    }
+    to {
+        stroke-dasharray: 2000px 0;
+    }
+}
+
+@keyframes fillDeer {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
